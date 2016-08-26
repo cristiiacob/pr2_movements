@@ -190,11 +190,11 @@ include_directories(
 add_executable(head_controller src/head_controller.cpp)
 target_link_libraries(head_controller ${catkin_LIBRARIES})
 
-#add_executable(torso_controller src/torso_controller.cpp)
-#target_link_libraries(torso_controller ${catkin_LIBRARIES})
+add_executable(torso_controller src/torso_controller.cpp)
+target_link_libraries(torso_controller ${catkin_LIBRARIES})
 
-add_executable(r_arm_controller src/r_arm_controller.cpp)
-target_link_libraries(r_arm_controller ${catkin_LIBRARIES})
+# add_executable(r_arm_movement_controller src/r_arm_movement_controller.cpp)
+# target_link_libraries(r_arm_movement_controller ${catkin_LIBRARIES})
 
 add_executable(r_gripper_controller src/r_gripper_controller.cpp)
 target_link_libraries(r_gripper_controller ${catkin_LIBRARIES})
